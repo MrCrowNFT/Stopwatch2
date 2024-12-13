@@ -26,6 +26,14 @@ function Stopwatch(){
 
     }
 
-    return(<div></div>)
+    return(<div className="stopwatch">
+        <div className="display">{formatTime()}</div>
+        <div className="controls">
+            <button className="start-btn" onClick={start}>Start</button>
+            <button className="stop-btn" onClick={stop}>Stop</button>
+            <button className="reset-btn" onClick={reset}>Reset</button>
+        </div>
+
+    </div>)
 }
 export default Stopwatch
